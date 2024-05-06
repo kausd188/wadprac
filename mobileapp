@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Info Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Hover effects */
+        .menu ul li:hover {
+            background-color: #f0f0f0;
+        }
+
+        .menu ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Blog styles */
+        .blog {
+            margin-top: 20px;
+        }
+
+        .blog h2 {
+            color: #333;
+        }
+
+        .blog p {
+            color: #666;
+        }
+
+        .blog .read-more {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to ChatGPT Info Hub</h1>
+        <p>Discover the latest insights, news, and resources about ChatGPT, an advanced language model developed by OpenAI. Whether you're interested in its capabilities, applications, or impact on various industries, this hub provides valuable information to explore.</p>
+
+        <!-- Blog Posts -->
+        <div class="blog">
+            <h2>Understanding ChatGPT: A Beginner's Guide</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae velit non justo pulvinar convallis. Nulla facilisi. Sed nec lacus vitae purus malesuada accumsan.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog">
+            <h2>How ChatGPT is Revolutionizing Conversational AI</h2>
+            <p>Quisque rutrum ante vitae libero commodo, in varius erat commodo. Proin dapibus, justo et eleifend dictum, odio arcu luctus felis, a efficitur nisi neque nec nisi.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog">
+            <h2>ChatGPT: The Future of Human-Machine Interaction</h2>
+            <p>Nunc ultricies dui id sapien ullamcorper, in auctor justo varius. Cras lacinia, risus nec semper aliquam, nunc libero ultricies arcu, sed cursus magna quam in nisl.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
