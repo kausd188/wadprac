@@ -1,0 +1,96 @@
+mkdir static-website
+cd static-website
+
+npm init -y
+
+npm install express
+
+mkdir public
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .city {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .city img {
+            max-width: 100%;
+            height: auto;
+        }
+        .city-info {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Information about 5 Cities</h1>
+    <div class="city">
+        <h2>New York</h2>
+        <img src="new-york.jpg" alt="New York">
+        <div class="city-info">
+            <p>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean.</p>
+        </div>
+    </div>
+    <div class="city">
+        <h2>Paris</h2>
+        <img src="paris.jpg" alt="Paris">
+        <div class="city-info">
+            <p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy, and culture.</p>
+        </div>
+    </div>
+    <div class="city">
+        <h2>Tokyo</h2>
+        <img src="tokyo.jpg" alt="Tokyo">
+        <div class="city-info">
+            <p>Tokyo, Japan’s bustling capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples.</p>
+        </div>
+    </div>
+    <div class="city">
+        <h2>London</h2>
+        <img src="london.jpg" alt="London">
+        <div class="city-info">
+            <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.</p>
+        </div>
+    </div>
+    <div class="city">
+        <h2>Dubai</h2>
+        <img src="dubai.jpg" alt="Dubai">
+        <div class="city-info">
+            <p>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture, and a lively nightlife scene.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+const express = require('express');
+const path = require('path');
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}/`);
+});
+
+node server.js
