@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Updating DOM with jQuery</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Function to update the text of an element with id "example"
+    function updateText() {
+        $('#example').text('Updated text using jQuery!');
+    }
+
+    // Call the function to update the text when the button is clicked
+    $('#updateButton').click(function(){
+        updateText();
+    });
+});
+</script>
+</head>
+<body>
+
+<!-- Initial text -->
+<p id="example">Original text</p>
+
+<!-- Button to trigger update -->
+<button id="updateButton">Update Text</button>
+
+</body>
+</html>
